@@ -1,0 +1,212 @@
+/* 
+black 010101
+blue rgb(105, 119, 155)
+light blue rgb(172, 219, 223)
+
+*/
+html{
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-color: white;
+}
+.logo{
+    color:rgb(105, 119, 155);
+}
+.nav-link{
+    color: rgb(255, 255, 255);
+}
+.fr{
+    left: 0;
+}
+.main{
+    height: 100vh;
+    width: 100%;
+    background:linear-gradient(rgb(00,00,00),rgb(172, 219, 223),rgb(152,189,203),rgb(00, 00, 00),);
+    text-align: center;
+    justify-content: space-between;
+}
+.containmain{
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.innerimg{
+    width: 100%;
+    display: flex;
+    animation: imgchange;
+    animation-delay: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+.img-fluid.orgimg{
+    rotate: 30deg;
+    animation: imgchange;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes imgchange{
+    form{
+        rotate:30deg;
+    }
+    to{
+        rotate:180deg;
+    }
+}
+.btn{
+    background-color: black;
+    color: white;
+    border-radius: 20%;
+}
+.btn:hover{
+    background-color: rgb(52, 52, 52);
+    color: rgb(66, 96, 66);
+}
+
+/* shop */
+.shop{
+    height: 100%;
+    width: 100%;
+    background-color:#000000;
+    justify-content: center;
+    text-align: center;
+}
+.shop h1{
+    color: white;
+    text-decoration: underline;
+}
+.fake-price{
+    text-decoration: line-through;
+}
+
+.pay_btn{
+    background-color: black;
+    color: white;
+    border-radius: 10%;
+}
+.pay_btn:hover{
+    background-color: lightskyblue;
+    color: black;
+    height: calc(height+5px);
+    width: calc(width+5px);
+    border-radius: 20%;
+}
+/* rating */
+
+.rating{
+    height: 100%;
+    width: 100%;
+
+}
+.rating h1 {
+    color: black;
+    text-decoration: underline;
+}
+
+/* about */
+
+.about{
+    margin: 20vh 0vh;
+    background-color:white;
+    text-align: center;
+}
+
+/* user */
+
+.user-popup-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .user-popup-name {
+    margin-bottom: 10px;
+  }
+  
+  .user-popup-btn {
+    margin-bottom: 5px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .user-popup-btn:hover {
+    background-color: #f0f0f0;
+  }
+
+.update-profile{
+    background: linear-gradient(black,white);
+}
+
+  @media only screen and (max-width: 600px) {
+    .shop{
+        justify-content: center;
+        height: 100%;
+    }
+    .rating{
+        height: 100%;
+    }
+    .about{
+        height: 35vh;
+    }
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    .shop{
+        justify-content: center;
+        height: 100%;
+    }
+    .rating{
+        height: 100%;
+    }
+    .about{
+        height: 35vh;
+    }
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    .shop{
+        justify-content: center;
+        height: 100%;
+    }
+    .rating{
+        height: 100%;
+    }
+    .about{
+        height: 35vh;
+    }
+  }
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    .shop{
+        justify-content: center;
+        height: 100%;
+    }
+    .rating{
+        height: 100%;
+    }
+    .about{
+        height: 35vh;
+    }
+  }
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    .shop{
+        justify-content: center;
+        height: 100%;
+    }
+    .rating{
+        height: 100%;
+    }
+    .about{
+        height: 35vh;
+    }
+  }
